@@ -1,25 +1,29 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+//import component
+import Head from './component/Head';
+import Body from './component/Body';
+import Footer from './component/Footer';
+import {Row, Col, Card} from 'react-materialize';
+
+
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <div className="container">
+        <Row>
+            <Col m={6} s={10} className="offset-m3 offset-s1">
+            <Card className="card">
+            <Head/>       
+            <Body/>           
+            <Footer/>
+            </Card>
+            </Col>
+        </Row>
+              
+       </div>
       </div>
     );
   }
