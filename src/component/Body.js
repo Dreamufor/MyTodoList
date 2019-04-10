@@ -17,15 +17,18 @@ class Body extends Component {
             if (flag === 'finish'){return state===1 }
             if (flag === 'unfinish'){return state===0 }
             return true;
-        })
+        })     
         return(
             <div>
-            <Collection>
-               {data.map((item, index) => {
+            <Collection>         
+               { 
+                data.length === 0 ? (<CollectionItem key={0}>
+                    You have no todo's left, yay!
+                     </CollectionItem>):(data.map((item, index) => {
                    let { id, name, state } = item;
                    state = parseFloat(state);
-                   return(
-                    <CollectionItem key={index}>  
+                        return(
+                    <CollectionItem key={id}>  
                     <Checkbox value="todo" label={name} checked={state} onChange={e => {
                         let newState = e.target.checked ? 1 : 0;
                         this.props.updateState(id, newState)
@@ -38,9 +41,9 @@ class Body extends Component {
                     </Icon>
                     </a>
                     </CollectionItem>
-                   )
-                
-                })}
+                   )                       
+                }))
+                   }
                
                 </Collection>
             </div>
