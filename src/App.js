@@ -14,7 +14,7 @@ class App extends Component {
       <div className="App">
         <div className="container">
         <Row>
-            <Col m={6} s={10} className="offset-m3 offset-s1">
+            <Col m={6} s={12} className="offset-m3">
             <Card className="card">
             <Head/>               
             <Body/>   
