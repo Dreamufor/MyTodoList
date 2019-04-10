@@ -43,5 +43,19 @@
     -->
      <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBN-T6HiyfvB49iU0lcLKl2aIown4uO2RI",
+        authDomain: "todolist-b0c09.firebaseapp.com",
+        databaseURL: "https://todolist-b0c09.firebaseio.com",
+        projectId: "todolist-b0c09",
+        storageBucket: "todolist-b0c09.appspot.com",
+        messagingSenderId: "967424624197"
+      };
+      firebase.initializeApp(config);
+    </script>
   </body>
 </html>
