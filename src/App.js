@@ -16,9 +16,9 @@ class App extends Component {
         <Row>
             <Col m={6} s={10} className="offset-m3 offset-s1">
             <Card className="card">
-            <Head/>       
-            <Body/>           
-            <Footer/>
+            <Head/>               
+            <Body/>   
+            <Footer/>          
             </Card>
             </Col>
         </Row>

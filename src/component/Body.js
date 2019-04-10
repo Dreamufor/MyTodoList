@@ -19,10 +19,8 @@ class Body extends Component {
             return true;
         })     
         return(
-            <div>
             <Collection>         
-               { 
-                data.length === 0 ? (<CollectionItem key={0}>
+               { data.length === 0 ? (<CollectionItem key={0}>
                     You have no todo's left, yay!
                      </CollectionItem>):(data.map((item, index) => {
                    let { id, name, state } = item;
@@ -36,9 +34,7 @@ class Body extends Component {
                     <a href="javascript:void(0)" className="secondary-content" onClick={e =>{                
                             this.props.remove(id);
                         }}>
-                    <Icon className="deep-orange-text text-lighten-1">
-                    delete
-                    </Icon>
+                        <i class="fas fa-trash deep-orange-text text-lighten-2"></i>
                     </a>
                     </CollectionItem>
                    )                       
@@ -46,7 +42,6 @@ class Body extends Component {
                    }
                
                 </Collection>
-            </div>
         )
     }
 }

@@ -22,9 +22,7 @@ class Footer extends Component {
 
     render(){
         return(
-          <Col m={10} s={10} className="offset-m1 offset-s1">
-          <TextInput label="Add todos" onKeyUp={this.addTodo}/>
-          </Col>
+        <TextInput label="Add todos" onKeyUp={this.addTodo}/>
         )
     }
 }
