@@ -1,12 +1,9 @@
-
-
-
 .card {
-       max-width: 360px;
-       min-height: 600px;
+    max-width: 360px;
+    min-height: 600px;
+    background: rgba(255, 255, 255, 0.7);
 }
 
-.footer{
-       display: block;
-
+.footer {
+    display: block;
 }
