@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {TextInput, Col} from 'react-materialize';
+import {TextInput} from 'react-materialize';
 import {connect} from 'react-redux';
 import action from '../store/action';
 

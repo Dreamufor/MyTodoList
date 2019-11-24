@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Collection, CollectionItem,Icon,Checkbox} from 'react-materialize';
+import {Collection, CollectionItem, Checkbox} from 'react-materialize';
 import {connect} from 'react-redux';
 import action from '../store/action';
 
@@ -31,7 +31,7 @@ class Body extends Component {
                         let newState = e.target.checked ? 1 : 0;
                         this.props.updateState(id, newState)
                         }}/>
-                    <a href="javascript:void(0)" className="secondary-content" onClick={e =>{                
+                    <a href=" " className="secondary-content" onClick={e =>{                
                             this.props.remove(id);
                         }}>
                         <i class="fas fa-trash deep-orange-text text-lighten-2"></i>
